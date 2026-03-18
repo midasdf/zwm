@@ -6,7 +6,7 @@ A window manager that gets out of your way.
 
 37KB of Zig. No Xlib. No bar. No opinions. Just windows on a screen, exactly where you put them.
 
-Built for a [HackberryPi Zero](https://github.com/ZitaoTech/Hackberry-Pi_Zero) — a 720x720 screen, 4GB of RAM, and a keyboard that fits in your palm. If it runs there, it runs anywhere.
+Built for a [HackberryPi Zero](https://github.com/ZitaoTech/Hackberry-Pi_Zero) — a 720x720 screen, 512MB of RAM, and a keyboard that fits in your palm. If it runs there, it runs anywhere.
 
 ## Why
 
@@ -39,14 +39,15 @@ zig build -Doptimize=ReleaseSmall   # → 37KB
 
 ### Dependencies
 
-Zig 0.15+ and three libraries the X server already has:
+[Zig 0.15+](https://ziglang.org/download/) and two libraries:
 
 ```sh
 # Arch
-sudo pacman -S zig libxcb xcb-util-keysyms xcb-util-renderutil
+sudo pacman -S zig libxcb xcb-util-keysyms
 
 # Debian/Ubuntu
-sudo apt install zig libxcb1-dev libxcb-keysyms1-dev libxcb-randr0-dev
+sudo apt install libxcb1-dev libxcb-keysyms1-dev libxcb-randr0-dev
+# Zig: https://ziglang.org/download/
 ```
 
 ## Install
